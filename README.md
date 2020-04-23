@@ -225,6 +225,3 @@ BONUS: Zabezpečte, aby testy definitívne zlyhali, až po 3 pokusoch (retrying 
 Postup: https://github.com/Bkucera/cypress-plugin-retries
 
 Výsledné scenáre sú v súbore `cypress/integration/features/todos.feature`
-
-
-test
