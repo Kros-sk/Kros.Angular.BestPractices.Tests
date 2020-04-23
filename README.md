@@ -227,3 +227,4 @@ Postup: https://github.com/Bkucera/cypress-plugin-retries
 Výsledné scenáre sú v súbore `cypress/integration/features/todos.feature`
 
 
+test
