@@ -29,18 +29,18 @@ When('vyplním registračné údaje užívateľa, ktorý sa ešte nikdy do syst�
   const atIndex = userEmail.lastIndexOf('@');
   const randomUserEmail = userEmail.substring(0, atIndex) + Utils.randomLongId() + userEmail.substring(atIndex);
 
-  IdentityServerPage.fillUserRegistrationData(randomUserEmail, constants.USER_PASSWORD, constants.USER_PASSWORD, true);
+  IdentityServerPage.fillUserRegistrationData(randomUserEmail, constants.USER_PASSWORD, constants.USER_PASSWORD);
 });
 
 When('vyplním registračné údaje užívateľa, ktorý už v systéme existuje', () => {
-  IdentityServerPage.fillUserRegistrationData(constants.USER_EMAIL, constants.USER_PASSWORD, constants.USER_PASSWORD, true);
+  IdentityServerPage.fillUserRegistrationData(constants.USER_EMAIL, constants.USER_PASSWORD, constants.USER_PASSWORD);
 });
 
 When('nesprávne vyplním registračné údaje {string} {string} {string} {string}',
     (email: string, password: string, confirmPassword: string, acceptLicenseTermsString: string) => {
 
   const acceptLicenseTerms = (acceptLicenseTermsString === 'true');
-  IdentityServerPage.fillUserRegistrationData(email, password, confirmPassword, acceptLicenseTerms);
+  IdentityServerPage.fillUserRegistrationData(email, password, confirmPassword);
 });
 
 When('kliknem na tlačidlo vytvoriť účet', () => {
@@ -52,7 +52,7 @@ When('kliknem na tlačidlo vytvoriť účet', () => {
  */
 
 Then('ma aplikácia presmeruje na prihlasovaciu stránku', () => {
-  IdentityServerPage.registerPageShouldHasHost(constants.OIDC_HOST);
+  IdentityServerPage.shouldHasOrigin(constants.OIDC_HOST);
 });
 
 Then('som presmerovaný na registračnú stránku', () => {
