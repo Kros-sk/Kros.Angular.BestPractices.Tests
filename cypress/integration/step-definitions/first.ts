@@ -14,4 +14,5 @@ When('začnem vyhľadávať', () => {
 
 Then('sa mi zobrazia výsledky', () => {
   cy.get('#rcnt');
+  cy.location('pathname').should('contain', '/search');
 });
