@@ -46,3 +46,9 @@ debug.log
 .DS_Store
 Thumbs.db
 
+# Test results
+/test-reports
+/videos
+/screenshots
+/cypress/integration/examples
+example.json
