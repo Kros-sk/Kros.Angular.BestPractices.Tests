@@ -4,7 +4,7 @@
     "dependencies": {
         "@cypress/webpack-preprocessor": "^5.5.0",
         "@types/cypress-cucumber-preprocessor": "^1.14.1",
-        "cypress": "^6.3.0",
+        "cypress": "6.3.0",
         "cypress-cucumber-preprocessor": "^4.0.0",
         "ts-loader": "^7.0.1",
         "typescript": "^3.8.3",
