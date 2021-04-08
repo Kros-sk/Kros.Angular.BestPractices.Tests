@@ -3,6 +3,7 @@
 Požiadavka: Prvá požiadavka
 
   Scenár: Prvý scenár
-    Pokiaľ navštívim stránku Krosu
-    Keď kliknem na odkaz ZPK
-    Tak budem na stránke imoz.kros.sk
+    Pokiaľ som všetko dobre nastavil
+    Tak všetko funguje a otvorí mi Google!
+    A začnem vyhľadávať
+    Tak sa mi zobrazia výsledky

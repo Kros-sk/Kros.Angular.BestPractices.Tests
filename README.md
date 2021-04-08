@@ -210,11 +210,3 @@ Pre pokrytie oblasti registrovania užívateľov budem postupovať takto:
     "baseUrl": "https://demo.todos.kros.wtf",
   }
   ```
-
-
-# Level 3 - Môj prvý test
-Pre napísanie prvého testu potrebujeme upraviť 2 súbory:
-- `first.feature` súbor (scenár) v cypress/integration/
-- `first.ts` súbor (definície krokov scenára) v cypress/integration/step-definitions 
-
-Začneme písaním scenára v .feature súbori.

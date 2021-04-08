@@ -1,16 +1,18 @@
 import { Given, Then, When } from 'cypress-cucumber-preprocessor/steps';
 
 
-Given('navštívim stránku Krosu', () => {
-  cy.visit('https://www.kros.sk');
+Given(`som všetko dobre nastavil`, () => {});
+
+Then(`všetko funguje a otvorí mi Google!`, () => {
+  cy.visit('https://www.google.com')
 });
 
-When('kliknem na odkaz ZPK', () => {
-  cy.get('.modreplnebez').click();
-  cy.get('.bieleplne').click();
-});
+When('začnem vyhľadávať', () => {
+  cy.get('#zV9nZe').click();
+  cy.get('.gLFyf').type("Skúsim štastie{enter}");
+})
 
-Then('budem na stránke imoz.kros.sk', () => {
-  cy.location('host').should('contain', 'login.kros.sk');
-  cy.location('pathname').should('contain', '/Account/Login');
+Then('sa mi zobrazia výsledky', () => {
+  cy.get('#rcnt');
+  cy.location('pathname').should('contain', '/search');
 });
