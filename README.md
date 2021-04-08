@@ -188,15 +188,4 @@ Then(`všetko funguje a otvorí mi Google!`, () => {
 ```
 
 
-# Level 2 - Registrácia užívateľov
-Pre pokrytie oblasti registrovania užívateľov budem postupovať takto:
-- vytvorím súbor `registration.feature` (pre scenáre) v cypress/integration/
-- vytvorím súbor `registration.ts` (definície krokov scenárov) v cypress/integration/step-definitions/
-- vytvorím všetky súbory v adresári cypress/integration/pages/
-- vytvorím súbor `constants.ts` (konštanty celého projektu) v cypress/support/
-- do súboru `cypress.json` pridám nastavenie pre testovaciu appku
-  ```json
-  {
-    "baseUrl": "https://demo.todos.kros.wtf",
-  }
-  ```
+# Level 2 - Prihlásenie do KROS účtu
