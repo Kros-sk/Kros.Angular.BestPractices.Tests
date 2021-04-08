@@ -38,6 +38,7 @@ speed-measure-plugin.json
 npm-debug.log
 yarn-error.log
 testem.log
+debug.log
 /typings
 .angulardoc.json
 
@@ -45,8 +46,3 @@ testem.log
 .DS_Store
 Thumbs.db
 
-# Test results
-/test-reports
-/videos
-/screenshots
-/cypress/integration/examples
