@@ -13,6 +13,6 @@ When('začnem vyhľadávať', () => {
 })
 
 Then('sa mi zobrazia výsledky', () => {
-  cy.get('#rcnt');
+  cy.get('#rcnt').should('exist');
   cy.location('pathname').should('contain', '/search');
 });
