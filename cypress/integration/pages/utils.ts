@@ -1,6 +1,6 @@
 export class Utils {
 
-    public static randomLongId() {
+    public static randomNumber() {
       return Utils.randomIntFromInterval(1000000000, 9999999999);
     }
   

@@ -1,4 +1,11 @@
 {
+    "projectId": "3ntb6u",
     "baseUrl": "https://demo.todos.kros.wtf",
-    "testFiles": "**/*.feature"
+    "testFiles": "**/*.feature",
+    "OAuthUrl": "https://login.kros.wtf",
+    "ProjectName": "Demo.BestPractices",
+    "OAuthClientId": "Demo.BestPractices.Postman",
+    "OAuthUsername": "testuser+1@kros.sk",
+    "OAuthPassword": "12345678",
+    "UserName": "Testovací užívateľ"
 }
