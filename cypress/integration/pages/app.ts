@@ -1,3 +1,4 @@
+import { BestPracticesHeader } from "./best-practices/best-practices-header";
 import { Browser } from "./browser";
 
 export class App {
@@ -14,14 +15,14 @@ export class App {
     Browser.waitForRoutes();
   }
 
-  // public static reloadAppAndGoToTodos() {
-  //     Browser.setupAwaitedRoutes([
-  //         {method: 'GET', url: /organizations/ }
-  //     ]);
-  //     Browser.reload();
-  //     Browser.waitForRoutes();
+  public static reloadAppAndGoToTodos() {
+      Browser.setupAwaitedRoutes([
+          {method: 'GET', url: /organizations/ }
+      ]);
+      Browser.reload();
+      Browser.waitForRoutes();
 
-  //     cy.wait(1000); // Waiting for loading app
-  //     BestPracticesHeader.clickAtTodos();
-  // }
+      cy.wait(1000); // Waiting for loading app
+      BestPracticesHeader.clickAtTodos();
+  }
 }
